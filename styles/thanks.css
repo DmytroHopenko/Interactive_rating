@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+:root{
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --lightgrey: hsl(217, 12%, 63%);
+    --mediumgrey: hsl(216, 12%, 54%);
+    --darkblue: hsl(213, 19%, 18%);
+    --verydarkblue: hsl(216, 12%, 8%);
+    --blackgradient: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+
+    --paragraph: 15px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Overpass', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background: var(--verydarkblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrap_thanks{
+    width: 412px;
+    height: 416px;
+    box-sizing: border-box;
+    background: var(--blackgradient);
+    padding: 45px 32px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrap_thanks span{
+    margin: 32px 0;
+    color: var(--orange);
+    background: var(--darkblue);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px; /* 160% */
+    border-radius: 22.5px;
+    height: 32px;
+    width: 193px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 0;
+    box-sizing: border-box;
+}
+.wrap_thanks h3{
+    color: var(--white);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 7px;
+}
+.wrap_thanks p{
+    font-size: 15px;
+    width: 340px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--lightgrey);
+    text-align: center;
+}
+@media only screen and (max-width: 768px) {
+    .wrap_thanks{
+        padding: 34px 24px;
+        width: 327px;
+        height: 360px;
+    }
+    .wrap_thanks img{
+        width: 144px;
+        height: 96px;
+    }
+    .wrap_thanks span{
+       width: 168px;
+       margin: 24px 0;
+       font-size: 14px;
+       line-height: 22px;
+    }
+    .wrap_thanks h3{
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+    .wrap_thanks p{
+        font-size: 14px;
+        line-height: 22px; /* 160% */
+        width: 279px;
+    }
+}
